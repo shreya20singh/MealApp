@@ -96,7 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				8ED7834F2B55F72C00AC6655 /* MealAppApp.swift */,
-				8ED783512B55F72C00AC6655 /* ContentView.swift */,
+				8ED7837A2B55F7F000AC6655 /* Models */,
+				8ED7837B2B55F7F800AC6655 /* Views */,
+				8ED7837C2B55F7FF00AC6655 /* ViewModels */,
+				8ED7837D2B55F81400AC6655 /* Services */,
 				8ED783532B55F73000AC6655 /* Assets.xcassets */,
 				8ED783552B55F73000AC6655 /* MealApp.entitlements */,
 				8ED783562B55F73000AC6655 /* Preview Content */,
@@ -127,6 +130,35 @@
 				8ED7836D2B55F73100AC6655 /* MealAppUITestsLaunchTests.swift */,
 			);
 			path = MealAppUITests;
+			sourceTree = "<group>";
+		};
+		8ED7837A2B55F7F000AC6655 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8ED7837B2B55F7F800AC6655 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8ED783512B55F72C00AC6655 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8ED7837C2B55F7FF00AC6655 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8ED7837D2B55F81400AC6655 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
