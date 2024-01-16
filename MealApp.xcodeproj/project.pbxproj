@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EB5265B2B560DC7000C08B0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5265A2B560DC7000C08B0 /* CardView.swift */; };
 		8ED783502B55F72C00AC6655 /* MealAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7834F2B55F72C00AC6655 /* MealAppApp.swift */; };
-		8ED783522B55F72C00AC6655 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED783512B55F72C00AC6655 /* ContentView.swift */; };
+		8ED783522B55F72C00AC6655 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED783512B55F72C00AC6655 /* SplashView.swift */; };
 		8ED783542B55F73000AC6655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED783532B55F73000AC6655 /* Assets.xcassets */; };
 		8ED783582B55F73000AC6655 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED783572B55F73000AC6655 /* Preview Assets.xcassets */; };
 		8ED783622B55F73000AC6655 /* MealAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED783612B55F73000AC6655 /* MealAppTests.swift */; };
 		8ED7836C2B55F73100AC6655 /* MealAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7836B2B55F73100AC6655 /* MealAppUITests.swift */; };
 		8ED7836E2B55F73100AC6655 /* MealAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7836D2B55F73100AC6655 /* MealAppUITestsLaunchTests.swift */; };
+		8ED7837F2B55F99900AC6655 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7837E2B55F99900AC6655 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8EB5265A2B560DC7000C08B0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		8ED7834C2B55F72C00AC6655 /* MealApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED7834F2B55F72C00AC6655 /* MealAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealAppApp.swift; sourceTree = "<group>"; };
-		8ED783512B55F72C00AC6655 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8ED783512B55F72C00AC6655 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		8ED783532B55F73000AC6655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ED783552B55F73000AC6655 /* MealApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MealApp.entitlements; sourceTree = "<group>"; };
 		8ED783572B55F73000AC6655 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		8ED783672B55F73100AC6655 /* MealAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED7836B2B55F73100AC6655 /* MealAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealAppUITests.swift; sourceTree = "<group>"; };
 		8ED7836D2B55F73100AC6655 /* MealAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8ED7837E2B55F99900AC6655 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +146,9 @@
 		8ED7837B2B55F7F800AC6655 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8ED783512B55F72C00AC6655 /* ContentView.swift */,
+				8ED783512B55F72C00AC6655 /* SplashView.swift */,
+				8ED7837E2B55F99900AC6655 /* HomeView.swift */,
+				8EB5265A2B560DC7000C08B0 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,7 +297,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ED783522B55F72C00AC6655 /* ContentView.swift in Sources */,
+				8ED7837F2B55F99900AC6655 /* HomeView.swift in Sources */,
+				8ED783522B55F72C00AC6655 /* SplashView.swift in Sources */,
+				8EB5265B2B560DC7000C08B0 /* CardView.swift in Sources */,
 				8ED783502B55F72C00AC6655 /* MealAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,7 +474,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -474,10 +482,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MealApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -504,7 +513,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -512,10 +521,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MealApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
