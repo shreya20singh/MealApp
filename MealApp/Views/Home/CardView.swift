@@ -18,7 +18,8 @@ struct CardView: View {
                 .frame(maxWidth: .infinity)
                 .frame(height: 150)
                 .cornerRadius(10)
-                .foregroundStyle(.white)
+                .foregroundStyle(Color.white.opacity(0.9))
+                //.background(Color.white.opacity(0.5))
                 .shadow(radius: 2)
                 .padding(.horizontal, 10)
             HStack{

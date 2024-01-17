@@ -18,15 +18,17 @@ class RecipeViewModel: ObservableObject {
     }
     
     func fetchRecipeDetails() async {
-        if let mealID = mealId {
-            do {
-                let recipe: Recipe = try await dataService.fetchData(from: "https://themealdb.com/api/json/v1/1/lookup.php?i=\(mealID)")
-                self.recipe = recipe
-                print(self.recipe!.ingredients)
-            } catch {
-                print("Error fetching recipe details: \(error)")
-            }
-        }
-    }
-
+       if let mealID = mealId {
+           do {
+               let response: RecipeResponse = try await dataService.fetchData(from: "https://themealdb.com/api/json/v1/1/lookup.php?i=\(mealID)")
+               
+               // Assuming the response always has at least one meal
+               if let firstRecipe = response.meals.first {
+                   self.recipe = firstRecipe
+               }
+           } catch {
+               print("Error fetching recipe details: \(error)")
+           }
+       }
+   }
 }

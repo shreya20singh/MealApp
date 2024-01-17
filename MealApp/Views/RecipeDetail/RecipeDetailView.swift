@@ -23,21 +23,22 @@ struct RecipeDetailView: View {
                 ImageView(recipe: recipeViewModel.recipe)
                     .frame(width: geo.size.width, height: geo.size.height * 0.38)
 
-//                HeadView(recipe: $recipeViewModel.recipes.first)
-//
-//                BodyView(showInstruction: $showInstruction)
+                HeadView(recipe: recipeViewModel.recipe)
+
+                BodyView(showInstruction: $showInstruction)
 
                 if showInstruction {
-//                    InstructionView(recipe: recipeViewModel.recipes.first)
+                    InstructionView(recipe: recipeViewModel.recipe)
                 } else {
-//                    IngredientView(ingredients: recipeViewModel.ingredients)
+                    IngredientView(recipe: recipeViewModel.recipe)
                 }
             }
-            .ignoresSafeArea()
             .task {
                 await recipeViewModel.fetchRecipeDetails()
             }
         }
+        .ignoresSafeArea()
+        .background(Color.black.opacity(0.8))
     }
 }
 

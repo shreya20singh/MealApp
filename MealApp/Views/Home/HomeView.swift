@@ -38,8 +38,15 @@ struct HomeView: View {
             .navigationTitle("Recipes")
             .navigationBarTitleDisplayMode(.inline)
             .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search")
-            //.background(Color.gray.opacity(0.8))
+            .background(Color.black.opacity(0.8))
+            .onAppear {
+                            UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white] // Set navigation title color to white
+                            UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).defaultTextAttributes = [.foregroundColor: UIColor.gray] // Set search bar text color to gray
+                            UISearchBar.appearance().barTintColor = .white // Set search bar background color
+                            UISearchBar.appearance().tintColor = .gray // Set search bar cancel button color
+                        }
         }
+        .accentColor(.white)
         .alert(isPresented: $viewModel.isShowingErrorAlert) {
             Alert(
                 title: Text("Error"),

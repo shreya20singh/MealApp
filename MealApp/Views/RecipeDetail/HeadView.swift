@@ -15,12 +15,9 @@ struct HeadView: View {
                 .frame(maxWidth: 390, alignment: .center)
                 .font(.title)
                 .bold()
+                .foregroundColor(.white)
         }
         .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
         .padding(.bottom)
     }
-}
-
-#Preview {
-    HeadView()
 }

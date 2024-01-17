@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct InstructionView: View {
+    var recipe: Recipe?
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Divider()
+        ScrollView(showsIndicators: false){
+            Text(recipe?.instructions ?? "Instruction detail")
+                .padding(.all, 30)
+                .foregroundColor(.white)
+        }
+        .dynamicTypeSize(...DynamicTypeSize.accessibility3)
     }
-}
-
-#Preview {
-    InstructionView()
 }

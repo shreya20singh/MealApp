@@ -11,7 +11,7 @@ struct RecipeResponse: Codable {
     let meals: [Recipe]
 
     private enum CodingKeys: String, CodingKey {
-        case meals
+        case meals = "meals"
     }
 
     init(from decoder: Decoder) throws {
